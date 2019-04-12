@@ -1,6 +1,6 @@
 {
   "name": "d3-force-chart",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "a Force-Oriented Graphics React Plug-in by d3",
   "main": "lib/index.js",
   "files": [
@@ -13,7 +13,7 @@
     "pub": "npm run build && npm publish",
     "dev": "webpack-dev-server --config ./webpack.config.dev.js"
   },
-  "keywords": [],
+  "keywords": ["react", "d3", "force graph"],
   "author": "funky_tiger",
   "license": "ISC",
   "devDependencies": {

@@ -1,7 +1,7 @@
 ***基于d3实现一个react力导向图插件***
 
 ## d3-force-chart插件介绍
-- 基于d3.js封装一个力导向图的react插件, 可缩放，可拖动。可点击节点动态生成子节点。
+- 基于d3.js封装一套力导向图的react插件, 可缩放，可拖动。可点击节点动态生成子节点。
 - 提供力导向图相关参数，可自定义不同效果的力导向图。
 - 提供点击事件，提供力导向图数据更新方法，可点击节点动态生成子节点。
 
@@ -48,7 +48,7 @@
 
 - OnUpdateData -> type: Function
 > 节点点击事件
->   *参数 d, i, nodes, edges, restart
+>   *参数 ( d, i, nodes, edges, restart )
 >       d: 当前点击的子节点
 >       i: 当前点击的子节点的下表    
 >       nodes: 点击前数据的所有节点node
@@ -56,8 +56,8 @@
 >       restart: 图表更新方法 在原有数据基础上添加新数据之后 再调用此方法更新图表
 
 - OnNodesClick -> type: Boolen
-> 不管是模拟数据节点还是真实数据节点 在默认情况下每个节点都是点击事件的
-> 传递OnNodesClick为true后 即可取消节点的点击事件
+> 不管是模拟数据节点还是真实数据节点 在默认情况下每个节点都是有点击事件的
+> 传递OnNodesClick为true后 可取消节点的点击事件
 > *默认OnNodesClick = { false }
 
 ## 注意事项
@@ -67,5 +67,9 @@
 > nodes: {"name":"*","url":"*"} -> name 节点文字描述， url 节点图片地址。
 > edges:  {"source":1,"target":0} -> source源，target目标。
 - 本插件在不传递任何参数情况下会默认有模拟数据。传递真实数据后 效果即为真实数据效果。
+
+## github
+- https://github.com/funky-tiger/d3-force-chart.git
+
 
 
