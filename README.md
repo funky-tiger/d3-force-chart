@@ -1,4 +1,4 @@
-*** 基于d3实现一个react力导向图插件 ***
+***基于d3实现一个react力导向图插件***
 
 ## d3-force-chart插件介绍
 - 基于d3.js封装一套力导向图的react插件, 可缩放，可拖动。可点击节点动态生成子节点。
@@ -14,38 +14,38 @@
 ## 相关 API
 - HEIGHT/WIDTH -> type:Number
 > 图表的高宽   *默认HEIGHT=800/HEIGHT=800
-- 
+
 - ScaleExtent -> type:Array
 > 缩放比例   *默认 ScaleExtent = [1 / 10, 10]
-- 
+
 - CenterLocation -> type:Object
 > 图表坐标中心   *默认 CenterLocation ={ x:WIDTH/2, y:HEIGHT/2}
-- 
+
 - TextLocation -> type: Object
 > 文字标签的位置   *默认 TextLocation = { dx:20, dy:8 }
-- 
+
 - Strength -> type: Number
 > 节点间的作用力   *默认 Strength = -380
-- 
+
 - DistanceMax -> type: Number
 > 节点间的最大距离   *默认 DistanceMax = -300
-- 
+
 - StrokeWidth -> type: Number
 > 节点间连线的宽度   *默认 StrokeWidth = 1
-- 
+
 - DragStartAlphaTarget / DragEndAlphaTarget -> type: Number
 > 开始/结束拖拽系数   *默认 DragStartAlphaTarget = 0.5 / DragEndAlphaTarget = 0
-- 
+
 - ImageSizeLocation -> type: Object
 > 节点图片的大小和位置   
 > *默认 ImageSizeLocation = { x:-15px, y:-15px, w:30px, h:30px }
 > x ： 横坐标， y ： 竖坐标， w ： 图片宽度， h ： 图片高度
-- 
+
 - ForceData -> type: Object
 > 力导向图的真实数据  
 >  *格式 [nodes: {"name":"*","url":"*"}, edges:  {"source":1,"target":0} ]  
 >  *默认 不传递forceData参数即为默认数据
-- 
+
 - OnUpdateData -> type: Function
 > 节点点击事件
 >   *参数 d, i, nodes, edges, restart
@@ -54,7 +54,7 @@
 >       nodes: 点击前数据的所有节点node
 >       edges: 点击前数据的所有节点间的关系
 >       restart: 图表更新方法 在原有数据基础上添加新数据之后 再调用此方法更新图表
-- 
+
 - OnNodesClick -> type: Boolen
 > 不管是模拟数据节点还是真实数据节点 在默认情况下每个节点都是点击事件的
 > 传递OnNodesClick为true后 即可取消节点的点击事件
