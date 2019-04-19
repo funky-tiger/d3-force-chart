@@ -78,8 +78,10 @@
 > 数据节点（nodes）和节点关系（edges）缺一不可
 > 同时要保证节点关系正确性
 ```
-nodes: {"name":"*","url":"*"} -> name 节点文字描述， url 节点图片地址。
-edges:  {"source":1,"target":0} -> source源，target目标。
+forceData = {
+    nodes: {"name":"*","url":"*"}, /* name 节点文字描述， url 节点图片地址。*/
+    edges:  {"source":1,"target":0}  /* source源，target目标。*/
+}
 ```
 
 - 本插件在不传递任何参数情况下会默认有模拟数据。传递真实数据后 效果即为真实数据效果。
