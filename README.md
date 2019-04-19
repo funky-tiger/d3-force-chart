@@ -8,8 +8,7 @@
 ## 使用方法
 - 安装 npm i d3-force-chart
 - 引入 import D3ForceChart from 'd3-force-chart';
-- 使用 <D3ForceChart />
-- 传参 <D3ForceChart forceData={newNodes:[...], newEdges:[...]} ...其他参数 />
+- 使用 <D3ForceChart forceData={newNodes:[...], newEdges:[...]} ...其他参数 />
 
 ## 相关 API
 - HEIGHT/WIDTH -> type:Number
@@ -47,7 +46,7 @@
 - ImageSizeLocation -> type: Object
 > 节点图片的大小和位置   
 > *默认 ImageSizeLocation = { x:-15px, y:-15px, w:30px, h:30px }
-> x ： 横坐标， y ： 竖坐标， w ： 图片宽度， h ： 图片高度
+> x ： 图片横坐标， y ： 图片竖坐标， w ： 图片宽度， h ： 图片高度
 - >>>
 - ForceData -> type: Object
 > 力导向图的真实数据  
@@ -63,16 +62,16 @@
 >       edges: 点击前数据的所有节点间的关系
 >       restart: 图表更新方法 在原有数据基础上添加新数据之后 再调用此方法更新图表
 - >>>
-- OnLongPressDown -> type: Function
-> 节点长按事件
->   *参数 ( d )
->       d: 当前长按的子节点
->  
-- >>>
 - OnNodesClick -> type: Boolen
 > 不管是模拟数据节点还是真实数据节点 在默认情况下每个节点都是有点击事件的
 > 传递OnNodesClick为true后 可取消节点的点击事件
 > *默认OnNodesClick = { false }
+- >>>
+- OnLongPressDown -> type: Function
+> 节点长按事件
+>   *参数 ( d )
+>       d: 当前长按的子节点
+
 
 ## 注意事项
 - 使用此插件必须遵守一定的数据结构。
