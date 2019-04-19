@@ -1,0 +1,61 @@
+{
+  "name": "d3-force-chart",
+  "version": "0.2.8",
+  "description": "a Force-Oriented Graphics React Plug-in by d3",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "export NODE_ENV=development && webpack-serve --config ./webpack.config.js",
+    "clean": "rimraf lib",
+    "build": "npm run clean && echo Using Babel && babel --version && babel src/D3ForceChart --out-dir lib -s",
+    "pub": "npm run build && npm publish",
+    "release": "export NODE_ENV=production && webpack"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2",
+      "react"
+    ],
+    "plugins": [
+      "babel-plugin-transform-class-properties"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/funky-tiger/d3-force-chart.git"
+  },
+  "keywords": [
+    "d3",
+    "react",
+    "force graph",
+    "关系图",
+    "javascript"
+  ],
+  "author": "funky_tiger",
+  "license": "ISC",
+  "homepage": "https://github.com/funky-tiger/d3-force-chart.git",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "css-loader": "^0.28.11",
+    "d3": "^5.9.2",
+    "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^4.1.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-serve": "^2.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "dependencies": {}
+}
