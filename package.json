@@ -1,6 +1,6 @@
 {
   "name": "d3-force-chart",
-  "version": "0.3.3",
+  "version": "0.3.5",
   "description": "a Force-Oriented Graphics React Plug-in by d3",
   "main": "lib/index.js",
   "scripts": {
